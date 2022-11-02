@@ -6,6 +6,7 @@ import ListOfUsers from "./Component/ListOfUsers";
 import RegisterForm from "./Component/RegisterForm";
 import Login from "./Component/Login";
 import LifeCycleMethods from "./Component/LifeCycle";
+import HooksDemo from "./functionalComponents/HooksDemo";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <ListOfUsers/> */}
       {/* <RegisterForm/> */}
       {/* <Login/> */}
-      <LifeCycleMethods/>
+      {/* <LifeCycleMethods/> */}
+      <HooksDemo/>
 
     </div>
   );
