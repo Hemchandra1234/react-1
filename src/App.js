@@ -7,7 +7,6 @@ import RegisterForm from "./Component/RegisterForm";
 import Login from "./Component/Login";
 import LifeCycleMethods from "./Component/LifeCycle";
 
-
 function App() {
   return (
     <div className="App">
