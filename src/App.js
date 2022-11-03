@@ -7,8 +7,18 @@ import RegisterForm from "./Component/RegisterForm";
 import Login from "./Component/Login";
 import LifeCycleMethods from "./Component/LifeCycle";
 import HooksDemo from "./functionalComponents/HooksDemo";
+import StateLiftingUp from "./Component/StateLiftingUp";
+import { useState } from "react";
 
 function App() {
+  const [name, setname] = useState("");
+  const [age, setAge] = useState(0);
+  
+  const getname = (name,age)=>{
+    setname (name);
+    setAge(age)
+  }
+
   return (
     <div className="App">
       {/* <div className="row">
@@ -29,8 +39,9 @@ function App() {
       {/* <RegisterForm/> */}
       {/* <Login/> */}
       {/* <LifeCycleMethods/> */}
-      <HooksDemo/>
-
+      {/* <HooksDemo/> */}
+      <StateLiftingUp name={"shailesh"} getname={getname}/>
+      name get by parent is {name} and age is {age}
     </div>
   );
 }
