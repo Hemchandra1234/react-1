@@ -1,14 +1,23 @@
-import F_Counter from "./Component/F_counter";
-import Counter from "./Component/Counter";
-import Counters from "./Component/Counters";
-import Hide_and_show from "./Component/Hide_and_show";
-import ListOfUsers from "./Component/ListOfUsers";
-import RegisterForm from "./Component/RegisterForm";
-import Login from "./Component/Login";
-import LifeCycleMethods from "./Component/LifeCycle";
-import HooksDemo from "./functionalComponents/HooksDemo";
-import StateLiftingUp from "./Component/StateLiftingUp";
+// import F_Counter from "./Component/F_counter";
+// import Counter from "./Component/Counter";
+// import Counters from "./Component/Counters";
+// import Hide_and_show from "./Component/Hide_and_show";
+// import ListOfUsers from "./Component/ListOfUsers";
+// import RegisterForm from "./Component/RegisterForm";
+// import Login from "./Component/Login";
+// import LifeCycleMethods from "./Component/LifeCycle";
+// import HooksDemo from "./functionalComponents/HooksDemo";
+// import StateLiftingUp from "./Component/StateLiftingUp";
+// import pure from "./PureComponent/MyPure"
+// import MyPure from "./PureComponent/MyPure";
+// import Fetch_use from "./Component/Fetch_use";
+// import MemoComponent from "./functionalComponents/MemoComponent";
+// import DummyComponent1 from "./Component/DummyComponent1";
+// import ApiFetchData from "./functionalComponents/ApiFetchData";
+// import FormData from "./functionalComponents/FormData";
 import { useState } from "react";
+import RoutingDemo from "./functionalComponents/RoutingDemo";
+
 
 function App() {
   const [name, setname] = useState("");
@@ -40,10 +49,17 @@ function App() {
       {/* <Login/> */}
       {/* <LifeCycleMethods/> */}
       {/* <HooksDemo/> */}
-      <StateLiftingUp name={"shailesh"} getname={getname}/>
-      name get by parent is {name} and age is {age}
+      {/* <StateLiftingUp name={"shailesh"} getname={getname}/> */}
+      {/* <MyPure/> */}
+      {/* name get by parent is {name} and age is {age} */}
+      {/* <DummyComponent1 name="Hemchandra"  /> */}
+      {/* <MemoComponent/> */}
+      {/* <Fetch_use/> */}
+      {/* <ApiFetchData/> */}
+      {/* <FormData/> */}
+      <RoutingDemo/>
     </div>
   );
-}
+    }
 
 export default App;

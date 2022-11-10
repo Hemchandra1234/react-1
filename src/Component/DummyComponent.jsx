@@ -13,4 +13,5 @@ class DummyComponent extends Component {
     }
 }
  
-export default DummyComponent;
+export default DummyComponent
+
